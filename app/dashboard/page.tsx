@@ -34,29 +34,29 @@ export default async function Page() {
 			<h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
 				Dashboard
 			</h1>
-			<div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-4'>
+			<div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
 				<Card
-					title='Collected'
+					title="Collected"
 					value={totalPaidInvoices}
-					type='collected'
+					type="collected"
 				/>
 				<Card
-					title='Pending'
+					title="Pending"
 					value={totalPendingInvoices}
-					type='pending'
+					type="pending"
 				/>
 				<Card
-					title='Total Invoices'
+					title="Total Invoices"
 					value={numberOfInvoices}
-					type='invoices'
+					type="invoices"
 				/>
 				<Card
-					title='Total Customers'
+					title="Total Customers"
 					value={numberOfCustomers}
-					type='customers'
+					type="customers"
 				/>
 			</div>
-			<div className='mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8'>
+			<div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
 				<RevenueChart revenue={revenue} />
 				<LatestInvoices latestInvoices={latestInvoices} />
 			</div>
