@@ -9,8 +9,10 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 
+// 🚀 IMPORTANT CONCEPT 🚀 //
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
+// using next's usePathname to determine the current path and highlight the active link.
 const links = [
 	{ name: 'Home', href: '/dashboard', icon: HomeIcon },
 	{
